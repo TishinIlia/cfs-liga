@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+  @@include("source/html/base/head.html")
+  <title>ProjectName — News-page</title>
+
+</head>
+<body>
+
+  <div style="display: none;">
+    @@include("build/img/sprite_auto.svg")
+  </div>
+  @@include("source/html/base/header.html", {
+    "page":"news"
+  })
+  <div class="wrapper">
+
+    <main>
+      <h1 class="visually-hidden">CENTRAL FIRE SERVICES INC</h1>
+
+      <section class="news news--preloader">
+          <h2 class="news__head">News</h2>
+            <div class="news__wrapper ">
+                @@include("source/html/components/news-list.html", {
+                    "slider": "button"
+                  })
+
+                  <div class="preloader">
+                    <div class="preloader__wrapper">
+                      <div class="preloader__element">
+                        loading...
+                      </div>
+                    </div>
+                  </div>
+            </div>
+      </section>
+    </main>
+
+    @@include("source/html/base/footer.html")
+  </div>
+
+  <script src="js/vendor.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+</html>

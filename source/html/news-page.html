@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+  @@include("source/html/base/head.html")
+  <title>ProjectName — News-page</title>
+
+</head>
+<body>
+
+  <div style="display: none;">
+    @@include("build/img/sprite_auto.svg")
+  </div>
+
+  @@include("source/html/base/header.html", {
+    "page":"news"
+  })
+  <div class="wrapper">
+
+
+    <main>
+      <h1 class="visually-hidden">CENTRAL FIRE SERVICES INC</h1>
+
+      <section class="news-block">
+          <h2 class="news-block__head">HOW OFTEN DOES A FIRE SUPPRESSION SYSTEM NEED <nobr>TO BE</nobr> HYDRO TESTED?</h2>
+          <div class="news-block__image">
+              <picture>
+                  <!-- 1х: 705px; 2x: 1410px -->
+                  <img src="img/content/news-1.jpg" srcset="img/content/news-1-2x.jpg 2x" width="705" height="711" alt="HOW OFTEN DOES A FIRE SUPPRESSION SYSTEM NEED TO BE HYDRO TESTED?">
+              </picture>
+          </div>
+          <div class="news-block__text">
+              <p>When you own a commercial kitchen, you have a lot of fire-safety codes to keep up with. Many of these codes involve the regular inspection and <strong>maintenance of your hood suppression system.</strong></p>
+              <p>A very important part of maintaining your hood suppression system and staying up to code is hydro testing or hydrostatic testing.</p>
+              <h3>What is Hydro Testing?</h3>
+              <p>Your kitchen’s hood suppression system includes a tank which contains the wet chemical suppression agent. Hydro testing is when that tank is removed and taken for testing.</p>
+              <p>The wet chemical storage tank, whether pre-pressurized or non-pressurized, will be emptied of the chemical suppression agent, then filled with water. It will then be sealed and pressurized to two to three times its operating pressure, and it will be kept at that pressure for at least one minute. If the pressure holds, the tank has passed the hydro test.</p>
+              <p>If the tank passes the test, it will be cleaned out and refilled with suppression agent to be put back in service. If it is a non-pressurized system that uses a cartridge, such as Ansul systems, then the regulator <strong>must be tested</strong> and the cartridge <strong>must be replaced</strong> at that time.</p>
+              <p>Additionally, during this time, many companies like Central Fire will also replace your hood suppression system’s hoses as well.</p>
+              <h3>Why is it Necessary?</h3>
+              <p>One answer to this question is because the DOT and NFPA both require it, as do the manufacturer instructions. Most likely, your local AHJ requires it as well.</p>
+              <p>However, besides simply adhering to codes, and the reason those codes exist, hydro testing ensures the integrity, and therefore safety and efficacy of the tank containing the wet chemical fire suppression agent.</p>
+              <p>In the event of a fire, the tank must be able to withstand the increased pressure required for the chemical agent to be effectively discharged. If there is a leak, or if the tank has become brittle or compromised in anyway, the suppression system will not work effectively or at all.</p>
+              <h3>How Often does my Hood Suppression System Need it?</h3>
+              <p>To a degree, this depends on your system.</p>
+              <p>If you have a non-pressurized system, like an Ansul system, the tanks must be hydro tested every 12 years. But pre-pressurized systems have DOT requirements, requiring that the first test occur after 12 years, but then every 7 years after that, as they can weaken and lose their pressure over time.</p>
+              <p><a href="#">Call us today</a><strong> to schedule your inspection with Central Fire.</strong></p>
+          </div>
+      </section>
+
+      <!-- slider -->
+
+      @@include("source/html/components/slider-news.html")
+
+    </main>
+
+    @@include("source/html/base/footer.html")
+  </div>
+
+  <script src="js/vendor.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+</html>

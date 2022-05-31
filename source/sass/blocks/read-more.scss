@@ -1,0 +1,41 @@
+.read-more {
+  color: $color-rust;
+  display: block;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 90%;
+  font-family: $font-family-saira-condensed;
+  transition: all $default-transition-settings;
+
+  @include viewport-tablet--s {
+    font-size: 16px;
+  }
+
+  &:hover {
+    opacity: 0.8;
+
+    &::after {
+      left: 10px;
+    }
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+
+  &::after {
+    transition: all $default-transition-settings;
+    content: "";
+    position: absolute;
+    bottom: -13px;
+    left: 0;
+    background-image: url("../img/svg/read-more.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 73px;
+    height: 8px;
+  }
+}

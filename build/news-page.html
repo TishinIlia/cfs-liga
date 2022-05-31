@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Project Name - описание">
+  <!-- генерируйте favicon тут - https://realfavicongenerator.net/ -->
+  <!-- ! в подключение фавикон манифеста обязательно добавьте строчки crossorigin="use-credentials"-->
+  <!-- <link href="favicon/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
+<link href="favicon/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+<link href="favicon/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
+<link href="favicon/site.webmanifest" rel="manifest" crossorigin="use-credentials">
+<link color="#c84659" href="favicon/safari-pinned-tab.svg" rel="mask-icon">
+<link href="favicon/favicon.ico" rel="shortcut icon">
+<meta content="#ffffff" name="msapplication-TileColor">
+<meta content="favicon/browserconfig.xml" name="msapplication-config">
+<meta content="#ffffff" name="theme-color">
+ -->
+  <!-- используйте только для шрифта находящегося на первом экране -->
+  <link rel="preload" href="fonts/SairaCondensed-Medium.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Roboto-Light.woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>ProjectName — News-page</title>
+</head>
+
+<body>
+  <div style="display: none;">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <symbol id="arrow-right-links" viewBox="0 0 75 8">
+        <path d="M1 3.5C0.723858 3.5 0.5 3.72386 0.5 4C0.5 4.27614 0.723858 4.5 1 4.5L1 3.5ZM74.3536 4.35356C74.5488 4.1583 74.5488 3.84172 74.3536 3.64645L71.1716 0.464472C70.9763 0.26921 70.6597 0.26921 70.4645 0.464472C70.2692 0.659734 70.2692 0.976317 70.4645 1.17158L73.2929 4.00001L70.4645 6.82843C70.2692 7.0237 70.2692 7.34028 70.4645 7.53554C70.6597 7.7308 70.9763 7.7308 71.1716 7.53554L74.3536 4.35356ZM1 4.5L74 4.50001L74 3.50001L1 3.5L1 4.5Z" fill="" />
+      </symbol>
+      <symbol id="arrow-right" viewBox="0 0 64 12">
+        <path d="M0.988579 5.27897C0.598725 5.27897 0.282686 5.59501 0.282686 5.98486C0.282686 6.37472 0.598725 6.69076 0.988579 6.69076V5.27897ZM63.4877 6.484C63.7634 6.20834 63.7634 5.76139 63.4877 5.48572L58.9954 0.993447C58.7198 0.717779 58.2728 0.717779 57.9972 0.993447C57.7215 1.26912 57.7215 1.71606 57.9972 1.99173L61.9903 5.98486L57.9972 9.978C57.7215 10.2537 57.7215 10.7006 57.9972 10.9763C58.2728 11.2519 58.7198 11.2519 58.9954 10.9763L63.4877 6.484ZM0.988579 6.69076H62.9886V5.27897H0.988579V6.69076Z" />
+      </symbol>
+      <symbol id="icon-close" viewBox="0 0 20 20">
+        <path d="M.293 18.291a1 1 0 101.414 1.414L10 11.413l8.292 8.292a1 1 0 101.414-1.414l-8.292-8.292 8.292-8.292A1 1 0 1018.291.293L9.999 8.585 1.707.293A1 1 0 10.293 1.707L8.585 10 .293 18.291z" />
+      </symbol>
+      <symbol id="slider-left" viewBox="0 0 45 14">
+        <path d="M43.4225 6.15507C43.8892 6.15507 44.2675 6.53336 44.2675 7C44.2675 7.46664 43.8892 7.84493 43.4225 7.84493V6.15507ZM0.40255 7.59745C0.0725822 7.26749 0.0725822 6.73251 0.40255 6.40255L5.77964 1.02545C6.10961 0.695487 6.64459 0.695487 6.97455 1.02545C7.30452 1.35542 7.30452 1.8904 6.97455 2.22036L2.19491 7L6.97455 11.7796C7.30452 12.1096 7.30452 12.6446 6.97455 12.9745C6.64459 13.3045 6.10961 13.3045 5.77964 12.9745L0.40255 7.59745ZM43.4225 7.84493H1V6.15507H43.4225V7.84493Z" fill="#222222" />
+      </symbol>
+      <symbol id="slider-right" viewBox="0 0 46 14">
+        <path d="M1.82892 6.36381C1.36228 6.36381 0.98399 6.7421 0.98399 7.20874C0.98399 7.67538 1.36228 8.05367 1.82892 8.05367V6.36381ZM44.8489 7.8062C45.1789 7.47623 45.1789 6.94125 44.8489 6.61129L39.4718 1.23419C39.1419 0.904227 38.6069 0.904227 38.2769 1.23419C37.9469 1.56416 37.9469 2.09914 38.2769 2.4291L43.0566 7.20874L38.2769 11.9884C37.9469 12.3183 37.9469 12.8533 38.2769 13.1833C38.6069 13.5133 39.1419 13.5133 39.4718 13.1833L44.8489 7.8062ZM1.82892 8.05367H44.2515V6.36381H1.82892V8.05367Z" fill="#222222" />
+      </symbol>
+      <symbol id="star-rect" viewBox="0 0 20 20">
+        <rect width="20" height="20" rx="2" fill="#B6361B" />
+        <path d="M9.04927 4.59362C9.34862 3.6723 10.652 3.6723 10.9514 4.59362L11.6468 6.73382C11.7806 7.14584 12.1646 7.42481 12.5978 7.42481H14.8482C15.8169 7.42481 16.2197 8.66441 15.436 9.23382L13.6154 10.5566C13.2649 10.8112 13.1182 11.2626 13.2521 11.6746L13.9475 13.8149C14.2468 14.7362 13.1924 15.5023 12.4086 14.9329L10.5881 13.6102C10.2376 13.3555 9.76303 13.3555 9.41254 13.6102L7.59201 14.9329C6.8083 15.5023 5.75381 14.7362 6.05316 13.8149L6.74856 11.6746C6.88243 11.2626 6.73577 10.8112 6.38529 10.5566L4.5647 9.23382C3.78099 8.66441 4.18377 7.42481 5.15249 7.42481H7.40283C7.83606 7.42481 8.22002 7.14584 8.35389 6.73382L9.04927 4.59362Z" fill="white" />
+      </symbol>
+      <symbol id="star" viewBox="0 0 24 22">
+        <path d="M12 0L14.6942 8.2918H23.4127L16.3593 13.4164L19.0534 21.7082L12 16.5836L4.94658 21.7082L7.64074 13.4164L0.587322 8.2918H9.30583L12 0Z" fill="#B6361B" />
+      </symbol>
+    </svg>
+  </div>
+  <header class="header header--news  header--no-js">
+    <!-- success -->
+    <div class="header__success-form success-form success-form--close">
+      <div class="success-form__wrapper">
+        <p>Success send!</p>
+      </div>
+    </div>
+    <!-- /success -->
+    <div class="header__wrapper">
+      <a class="header__logo header__logo--news" href="main.html" aria-label="Переход на главную">
+        <picture>
+          <source media="(max-width: 767px)" srcset="img/svg/logo-head-mobile.svg">
+          <img src="img/svg/logo-head-mobile.svg" alt="Logotype «CENTRAL FIRE SERVICES INC»" height="76" width="378">
+        </picture>
+      </a>
+      <div class="header__menu-wrapper">
+        <nav class="header__menu  header__menu--no-js">
+          <button type="button" class="header__menu-btn">Open menu</button>
+          <ul>
+            <li>
+              <a href="main.html" class="header__menu-link ">Home</a>
+            </li>
+            <li>
+              <a href="service.html" class="header__menu-link ">Services</a>
+              <ul class="header__side-menu">
+                <li>
+                  <a href="service.html" class="header__menu-link">Kitchen Fire Suppression System</a>
+                </li>
+                <li>
+                  <a href="service.html" class="header__menu-link">Fire Extinguisher</a>
+                </li>
+                <li>
+                  <a href="service.html" class="header__menu-link">Fire sprinkler system</a>
+                </li>
+              </ul>
+              <button type="button" class="header__side-menu-btn">Open side</button>
+            </li>
+            <li>
+              <a href="#gallery" class="header__menu-link ">Gallery</a>
+            </li>
+            <li>
+              <a href="news.html" class="header__menu-link header__menu-link--active">News</a>
+            </li>
+            <li>
+              <a href="#contacts" class="header__menu-link ">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <script>
+        const header = document.querySelector('.header');
+        const headerMenu = document.querySelector('.header__menu');
+        const menuBtn = document.querySelector('.header__menu-btn');
+
+        if (header && header.classList.contains('header--no-js')) {
+          header.classList.remove('header--no-js');
+        }
+
+        if (headerMenu && menuBtn) {
+          if (headerMenu.classList.contains('header__menu--no-js')) {
+            headerMenu.classList.remove('header__menu--no-js');
+            headerMenu.classList.add('header__menu--js');
+            headerMenu.classList.add('header__menu--close');
+          }
+        }
+      </script>
+      <a href="tel:4088540320" class="header__contact">
+        <span class="header__contact-phone"></span>
+        <p class="header__contact-number">408-854-0320</p>
+        <p class="header__contact-adress">24/7 emergency call out</p>
+      </a>
+    </div>
+  </header>
+  <div class="wrapper">
+    <main>
+      <h1 class="visually-hidden">CENTRAL FIRE SERVICES INC</h1>
+      <section class="news-block">
+        <h2 class="news-block__head">HOW OFTEN DOES A FIRE SUPPRESSION SYSTEM NEED <nobr>TO BE</nobr> HYDRO TESTED?</h2>
+        <div class="news-block__image">
+          <picture>
+            <!-- 1х: 705px; 2x: 1410px -->
+            <img src="img/content/news-1.jpg" srcset="img/content/news-1-2x.jpg 2x" width="705" height="711" alt="HOW OFTEN DOES A FIRE SUPPRESSION SYSTEM NEED TO BE HYDRO TESTED?">
+          </picture>
+        </div>
+        <div class="news-block__text">
+          <p>When you own a commercial kitchen, you have a lot of fire-safety codes to keep up with. Many of these codes involve the regular inspection and <strong>maintenance of your hood suppression system.</strong></p>
+          <p>A very important part of maintaining your hood suppression system and staying up to code is hydro testing or hydrostatic testing.</p>
+          <h3>What is Hydro Testing?</h3>
+          <p>Your kitchen’s hood suppression system includes a tank which contains the wet chemical suppression agent. Hydro testing is when that tank is removed and taken for testing.</p>
+          <p>The wet chemical storage tank, whether pre-pressurized or non-pressurized, will be emptied of the chemical suppression agent, then filled with water. It will then be sealed and pressurized to two to three times its operating pressure, and it will be kept at that pressure for at least one minute. If the pressure holds, the tank has passed the hydro test.</p>
+          <p>If the tank passes the test, it will be cleaned out and refilled with suppression agent to be put back in service. If it is a non-pressurized system that uses a cartridge, such as Ansul systems, then the regulator <strong>must be tested</strong> and the cartridge <strong>must be replaced</strong> at that time.</p>
+          <p>Additionally, during this time, many companies like Central Fire will also replace your hood suppression system’s hoses as well.</p>
+          <h3>Why is it Necessary?</h3>
+          <p>One answer to this question is because the DOT and NFPA both require it, as do the manufacturer instructions. Most likely, your local AHJ requires it as well.</p>
+          <p>However, besides simply adhering to codes, and the reason those codes exist, hydro testing ensures the integrity, and therefore safety and efficacy of the tank containing the wet chemical fire suppression agent.</p>
+          <p>In the event of a fire, the tank must be able to withstand the increased pressure required for the chemical agent to be effectively discharged. If there is a leak, or if the tank has become brittle or compromised in anyway, the suppression system will not work effectively or at all.</p>
+          <h3>How Often does my Hood Suppression System Need it?</h3>
+          <p>To a degree, this depends on your system.</p>
+          <p>If you have a non-pressurized system, like an Ansul system, the tanks must be hydro tested every 12 years. But pre-pressurized systems have DOT requirements, requiring that the first test occur after 12 years, but then every 7 years after that, as they can weaken and lose their pressure over time.</p>
+          <p><a href="#">Call us today</a><strong> to schedule your inspection with Central Fire.</strong></p>
+        </div>
+      </section>
+      <!-- slider -->
+      <section class="slider slider--news">
+        <h2 class="slider__head">Other tips</h2>
+        <div class="tips__slider-controls slider-controls slider-controls--news">
+          <button type="button" class="slider__navigation-btn slider__navigation-btn--last slider-controls__btn slider-controls__btn--prev">last<span></span></button>
+          <button type="button" class="slider__navigation-btn slider__navigation-btn--next slider-controls__btn slider-controls__btn--prev">next<span></span></button>
+        </div>
+        <div class="slider__wrapper">
+          <div class="swiper-container news-swiper">
+            <ul class="swiper-wrapper news-list">
+              <li class="swiper-slide news-list__item">
+                <div class="news-list__image">
+                  <picture>
+                    <!-- 1х: 546px; 2x: 1092px -->
+                    <img src="img/content/news-list-1.jpg" srcset="img/content/news-list-1-2x.jpg 2x" width="546" height="320" alt="How often does a fire suppression system need to be hydro tested?">
+                  </picture>
+                </div>
+                <h3><a href="news-page.html">How often does a fire suppression system need to be hydro tested?</a></h3>
+                <p>11/26/2019</p>
+                <a href="news-page.html" class="read-more">Read more</a>
+              </li>
+              <li class="swiper-slide news-list__item">
+                <div class="news-list__image">
+                  <picture>
+                    <!-- 1х: 546px; 2x: 1092px -->
+                    <img src="img/content/news-list-2.jpg" srcset="img/content/news-list-2-2x.jpg 2x" width="546" height="320" alt="Life safety and fire protection requirements for restaurants?">
+                  </picture>
+                </div>
+                <h3><a href="news-page.html">Life safety and fire protection requirements for restaurants?</a></h3>
+                <p>04/28/2020</p>
+                <a href="news-page.html" class="read-more">Read more</a>
+              </li>
+              <li class="swiper-slide news-list__item">
+                <div class="news-list__image">
+                  <picture>
+                    <!-- 1х: 546px; 2x: 1092px -->
+                    <img src="img/content/news-list-3.jpg" srcset="img/content/news-list-3-2x.jpg 2x" width="546" height="320" alt="How often does a fire suppression system need to be hydro tested?">
+                  </picture>
+                </div>
+                <h3><a href="news-page.html">Fire extinguisher inspections</a></h3>
+                <p>07/26/2020</p>
+                <a href="news-page.html" class="read-more">Read more</a>
+              </li>
+              <li class="swiper-slide news-list__item">
+                <div class="news-list__image">
+                  <picture>
+                    <!-- 1х: 546px; 2x: 1092px -->
+                    <img src="img/content/news-list-1.jpg" srcset="img/content/news-list-1-2x.jpg 2x" width="546" height="320" alt="How often does a fire suppression system need to be hydro tested?">
+                  </picture>
+                </div>
+                <h3><a href="news-page.html">How often does a fire suppression system need to be hydro tested?</a></h3>
+                <p>11/26/2019</p>
+                <a href="news-page.html" class="read-more">Read more</a>
+              </li>
+              <li class="swiper-slide news-list__item">
+                <div class="news-list__image">
+                  <picture>
+                    <!-- 1х: 546px; 2x: 1092px -->
+                    <img src="img/content/news-list-2.jpg" srcset="img/content/news-list-2-2x.jpg 2x" width="546" height="320" alt="Life safety and fire protection requirements for restaurants?">
+                  </picture>
+                </div>
+                <h3><a href="news-page.html">Life safety and fire protection requirements for restaurants?</a></h3>
+                <p>04/28/2020</p>
+                <a href="news-page.html" class="read-more">Read more</a>
+              </li>
+              <li class="swiper-slide news-list__item">
+                <div class="news-list__image">
+                  <picture>
+                    <!-- 1х: 546px; 2x: 1092px -->
+                    <img src="img/content/news-list-3.jpg" srcset="img/content/news-list-3-2x.jpg 2x" width="546" height="320" alt="How often does a fire suppression system need to be hydro tested?">
+                  </picture>
+                </div>
+                <h3><a href="news-page.html">Fire extinguisher inspections</a></h3>
+                <p>07/26/2020</p>
+                <a href="news-page.html" class="read-more">Read more</a>
+              </li>
+            </ul>
+          </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__contact">
+        <div class="footer__contact-wrapper">
+          <div class="footer__contact-lists">
+            <ul>
+              <li>Contacts</li>
+              <li><a href="tel:4088540320">408-854-0320</a></li>
+              <li><a href="mailto:centralfireinc@gmail.com">centralfireinc@gmail.com</a></li>
+            </ul>
+            <ul>
+              <li>Address</li>
+              <li><a href="#">2512 Seaboard Ave, San Jose, CA 95131 San Jose, CA 95134</a></li>
+            </ul>
+            <ul>
+              <li>Licence Number</li>
+              <li><a href="#">1042911 CSLB</a></li>
+            </ul>
+          </div>
+          <div class="footer__yelp">
+            <picture>
+              <!-- 1х: 118px; 2x: 236px -->
+              <img src="img/content/yelp.png" srcset="img/content/yelp-2x.png 2x" alt="yelp" width="118" height="57">
+            </picture>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="footer__bottom-wrapper">
+          <a class="footer__logo" href="main.html">
+            <picture>
+              <source media="(max-width: 767px)" srcset="img/svg/logo-head-mobile.svg">
+              <img src="img/svg/logo-footer-d.svg" width="301" height="60" alt="Logotype «CENTRAL FIRE SERVICES INC»">
+            </picture>
+          </a>
+          <p class="footer__copyright">© 2021 Central fire services inc</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="js/vendor.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

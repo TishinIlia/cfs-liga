@@ -1,0 +1,154 @@
+.review-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: $color-snow;
+  box-shadow: 0 26px 40px rgba(0, 0, 0, 0.05);
+
+  @include viewport-mobile {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+}
+
+.review-card__container {
+  max-width: 402px;
+  min-height: 217px;
+
+  font-family: $font-family-roboto;
+  font-weight: 300;
+
+  color: $color-nero;
+
+  @include viewport-mobile {
+    padding-top: 30px;
+    padding-right: 10px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+  }
+}
+
+.review-card__review-info-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.review-card__rating {
+  display: flex;
+  justify-content: space-between;
+
+  width: 112px;
+}
+
+.review-card__date {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+
+  text-align: right;
+  letter-spacing: 0.03em;
+
+  opacity: 0.8;
+
+  @include viewport-mobile {
+    margin-right: 10px;
+  }
+}
+
+.review-card__review-text {
+  font-size: 14px;
+  line-height: 150%;
+
+  letter-spacing: 0.03em;
+
+  margin-top: 20px;
+  margin-bottom: 16px;
+
+  b {
+    font-weight: normal;
+  }
+
+  a {
+    font-family: $font-family-saira-condensed;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 90%;
+
+    color: $color-rust;
+    text-decoration: underline;
+  }
+
+  a:hover,
+  a:focus {
+    opacity: 0.8;
+  }
+
+  @include viewport-mobile {
+    margin-bottom: 25px;
+  }
+}
+
+.review-card__user-info-container {
+  display: flex;
+  align-items: center;
+
+  img {
+    width: 68px;
+    height: 68px;
+    border-radius: 4px;
+  }
+}
+
+.review-card__user-info-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
+
+  @include viewport-mobile {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+    margin-left: 16px;
+  }
+}
+
+.review-card__user-name {
+  font-family: $font-family-saira-condensed;
+  font-weight: 500;
+
+  flex-shrink: 0;
+
+  font-size: 26px;
+  line-height: 90%;
+
+  margin-left: 18px;
+  margin-right: 20px;
+
+  @include viewport-mobile {
+    font-size: 20px;
+    margin: 0;
+    margin-bottom: 5px;
+  }
+}
+
+.review-card__user-address {
+  font-weight: normal;
+
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.03em;
+
+  text-align: right;
+
+  margin-left: auto;
+
+  @include viewport-mobile {
+    font-size: 14px;
+    margin: 0;
+  }
+}

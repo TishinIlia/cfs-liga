@@ -1,0 +1,26 @@
+.section-title {
+  font-family: $font-family-saira-condensed;
+  font-weight: 500;
+
+  font-size: 71px;
+  line-height: 90%;
+  letter-spacing: -0.4px;
+
+  text-transform: uppercase;
+
+  color: $color-nero;
+
+  @include viewport-desktop--s {
+    font-size: 50px;
+  }
+
+  @include viewport-tablet--s {
+    font-size: 6.7vw;
+  }
+
+  @include viewport-mobile {
+    font-size: 30px;
+    line-height: 27px;
+    letter-spacing: normal;
+  }
+}

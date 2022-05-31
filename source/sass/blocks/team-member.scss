@@ -1,0 +1,58 @@
+.team-member {
+  color: $color-nero;
+
+  img {
+    height: 360px;
+    object-fit: cover;
+  }
+
+  h3 {
+    font-family: $font-family-saira-condensed;
+    font-weight: 500;
+
+    font-size: 26px;
+    line-height: 90%;
+
+    margin: 0;
+    margin-top: auto;
+
+    transition: $default-transition-settings;
+  }
+
+  p {
+    font-family: $font-family-roboto;
+    font-weight: 300;
+
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.03em;
+
+    margin-top: 8px;
+
+    opacity: 0.8;
+  }
+
+  &:hover h3 {
+    color: $color-bahama-blue;
+  }
+
+  @include viewport-desktop--s {
+    img {
+      height: 284px;
+    }
+  }
+
+  @include viewport-mobile {
+    img {
+      height: 198px;
+    }
+
+    h3 {
+      font-size: 20px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+}

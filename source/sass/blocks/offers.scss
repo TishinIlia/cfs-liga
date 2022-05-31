@@ -1,0 +1,44 @@
+.offers__title {
+  margin-bottom: 73px;
+  padding-top: 114px;
+
+  @include viewport-tablet--m {
+    margin-bottom: 7.5vw;
+    padding-top: 0;
+  }
+
+  @include viewport-mobile {
+    margin-bottom: 26px;
+  }
+}
+
+.offers__item {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 90px;
+
+  &:nth-of-type(2n) {
+    flex-direction: row-reverse;
+  }
+
+  img {
+    object-fit: cover;
+    height: 100%;
+  }
+
+  @include viewport-tablet--m {
+    justify-content: start;
+    margin-bottom: 30px;
+
+    img {
+      display: none;
+    }
+
+    &:nth-of-type(2n) {
+      flex-direction: row;
+    }
+  }
+
+
+}

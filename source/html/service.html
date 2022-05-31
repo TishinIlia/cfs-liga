@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+  @@include("source/html/base/head.html")
+  <title>ProjectName — News-page</title>
+
+</head>
+<body>
+
+  <div style="display: none;">
+    @@include("build/img/sprite_auto.svg")
+  </div>
+  @@include("source/html/base/header.html", {
+    "page":"services"
+  })
+  <div class="wrapper">
+
+
+    <main>
+      <h1 class="visually-hidden">CENTRAL FIRE SERVICES INC</h1>
+      <!-- top image -->
+      <div class="service-top">
+        <picture>
+          <!-- 1x - 1723px : 2x - 3446px -->
+          <img src="img/content/service-top.jpg" srcset="img/content/service-top-2x.jpg 2x" alt="Fire Extinguisher" width="1723" height="484">
+        </picture>
+
+        <div class="service-top__form-wrapper">
+          <div class="service-top__form">
+            <p class="">Quick Order</p>
+            <form>
+              <label for="name"> Имя
+                <input type="text" name="name" id="name">
+              </label>
+              <label for="email"> E-mail
+                <input type="email" name="email" id="email">
+              </label>
+              <button type="button" id="send">
+                <span>Buy now</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <section class="service-content">
+        <h2 class="service-content__head">Fire extinguisher</h2>
+        <button type="button" class="service-content__button visually-hidden">Quick order</button>
+        <div class="service-content-text">
+          <h3>Fire extinguisher</h3>
+          <p>The NFPA requires annual professional fire extinguisher inspections along with monthly inspections that you can do on your own. Look no further for one of the best fire extinguisher inspection companies in the area!</p>
+          <h3>Fire Extinguisher Maintenance</h3>
+          <p>Fire extinguishers are pretty durable. However, this is not always true—you may find that your fire extinguisher has bumps, dents, leaks, or rust that can impair its ability to keep you safe at all times. A fire extinguisher with dents in it will probably require some work. We can provide the fire extinguisher service you need. We can provide fire extinguisher maintenance that’s as basic or as advanced as you need to make sure your fire extinguisher will keep you safe at all times.</p>
+          <h3>Fire Extinguisher Recharge</h3>
+          <p>Have you had to discharge your fire extinguisher recently? It’s imperative that you have your extinguisher recharged—the difference between a fully charged extinguisher and one that isn’t could be the difference between life and death.</p>
+          <p><a href="#">Schedule your fire extinguisher recharge today!</a></p>
+          <h3>Fire Extinguisher Hydrostatic Testing or Replacement</h3>
+          <p>Unused and maintained fire extinguishers should last a very long time, but let’s face it—nothing’s perfect.</p>
+          <p>If your fire extinguisher is more than 12 years old, the NFPA and local authorities require you to have it hydro-tested or replaced. A fire extinguisher hydro-test will make sure the shell of your fire extinguisher has no cracks or leaks that can cause it to malfunction when you need it most. If it turns out we need to replace your fire extinguishers, that’s no problem!</p>
+          <h3>Fire Extinguisher Recharge</h3>
+          <p>Central Fire Services has over 5 years of experience providing complete fire protection services for businesses, organizations, government buildings, and restaurants. Our number one focus is your safety — we want to make sure your employees, property, and valuables are safe from the dangers of potential fires. We take pride in our “customer first” reputation, and we will do whatever it takes to make sure your property and valuables are protected from fire hazards and that your building meets fire safety codes.</p>
+          <p><br></p>
+          <p><br></p>
+        </div>
+      </section>
+    </main>
+
+    @@include("source/html/base/footer.html")
+  </div>
+
+  <script src="js/vendor.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+.preloader {
+  width: 100%;
+  margin-top: 90px;
+
+  @include viewport-tablet--s {
+    margin-top: 74px;
+  }
+}
+
+.preloader__wrapper {
+  max-width: 104px;
+  margin: auto;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+.preloader__element {
+  margin: auto;
+  font-size: 0;
+  width: 104px;
+  height: 99px;
+  background-image: url("../img/sprite/preloader.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  animation: spin 5s linear 0s infinite;
+
+  @include viewport-tablet--s {
+    width: 34px;
+    height: 32px;
+    top: 0;
+  }
+}

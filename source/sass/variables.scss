@@ -1,0 +1,61 @@
+// Colors
+//---------------------------------
+// https://www.htmlcsscolor.com/hex/334482
+
+// Default
+
+$color-default-black:             #000000;
+$color-default-white:             #ffffff;
+$color-transparent:               rgba(255, 255, 255, 0);
+
+// Base
+
+$color-nero:                      #222222;
+$color-bahama-blue:               #19517e;
+$color-rust:                      #b6361b;
+$color-snow:                      #f9f9f9;
+$color-white-smoke:               #efefef;
+
+
+// Gradient
+
+$black-to-right:                    linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
+
+// Typography
+//---------------------------------
+
+$font-family-saira:                               "Saira", "Arial", sans-serif;
+$font-family-saira-condensed:                     "Saira Condensed", "Arial", sans-serif;
+$font-family-roboto:                              "Roboto", "Arial", sans-serif;
+$font-family-montserrat:                          "Montserrat", "Arial", sans-serif;
+
+// Animation
+//---------------------------------
+
+$default-transition-settings:       0.3s ease;
+$modal-transition-settings:         0.6s cubic-bezier(0.55, 0, 0.1, 1);
+
+// Viewports
+//---------------------------------
+
+$viewport-mobile: 320px;
+$viewport-tablet--s: 640px;
+$viewport-tablet--m: 768px;
+$viewport-desktop--s: 1024px;
+$viewport-desktop--m: 1440px;
+$viewport-desktop--l: 1920px;
+
+// Container sizes
+//---------------------------------
+$container-width: 1720px;
+$c-padding-desktop--m: 50px;
+$c-padding-desktop--s: 40px;
+$c-padding-tablet--m: 24px;
+$c-padding-tablet--s: 20px;
+$c-padding-mobile: 10px;
+
+// Retina
+//---------------------------------
+
+$retina-dpi:                        144dpi;
+$retina-dppx:                       1.5dppx;

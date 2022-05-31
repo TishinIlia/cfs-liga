@@ -1,0 +1,24 @@
+.rating {
+  display: flex;
+
+  & svg {
+    margin-right: 4px;
+  }
+}
+
+.rating__text {
+  display: block;
+
+  font-family: $font-family-saira;
+  font-weight: normal;
+
+  color: $color-nero;
+
+  font-size: 18px;
+  line-height: 110%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  margin-left: 15px;
+  padding-top: 3px;
+}

@@ -1,0 +1,150 @@
+@@if (slider === 'slider') {
+
+    <h2 class="slider__head">Tips</h2>
+
+    <div class="slider__wrapper">
+
+        <div class="swiper-container news-swiper">
+}
+
+@@if (slider === 'sliderbutton') {
+
+    <h2 class="slider__head">Other tips</h2>
+
+    <div class="tips__slider-controls slider-controls slider-controls--news">
+      <button type="button" class="slider__navigation-btn slider__navigation-btn--last slider-controls__btn slider-controls__btn--prev">last<span></span></button>
+      <button type="button" class="slider__navigation-btn slider__navigation-btn--next slider-controls__btn slider-controls__btn--prev">next<span></span></button>
+    </div>
+
+    <div class="slider__wrapper">
+
+        <div class="swiper-container news-swiper">
+}
+
+    @@if (slider === 'sliderbutton' || slider === 'slider') {
+        <ul class="swiper-wrapper news-list">
+    }
+    @@if (slider === 'none' || slider === 'button') {
+        <ul class="news__news-list news-list">
+    }
+
+
+        @@if (slider === 'sliderbutton' || slider === 'slider') {
+            <li class="swiper-slide news-list__item">
+        }
+        @@if (slider === 'none' || slider === 'button') {
+            <li class="news-list__item">
+        }
+
+            <div class="news-list__image">
+                <picture>
+                    <!-- 1х: 546px; 2x: 1092px -->
+                    <img src="img/content/news-list-1.jpg" srcset="img/content/news-list-1-2x.jpg 2x" width="546" height="320" alt="How often does a fire suppression system need to be hydro tested?">
+                </picture>
+            </div>
+            <h3><a href="news-page.html">How often does a fire suppression system need to be hydro tested?</a></h3>
+            <p>11/26/2019</p>
+            @@if (slider === 'sliderbutton' || slider === 'button') {
+                <a href="news-page.html" class="read-more">Read more</a>
+            }
+        </li>
+
+        @@if (slider === 'sliderbutton' || slider === 'slider') {
+            <li class="swiper-slide news-list__item">
+        }
+        @@if (slider === 'none' || slider === 'button') {
+            <li class="news-list__item">
+        }
+            <div class="news-list__image">
+                <picture>
+                    <!-- 1х: 546px; 2x: 1092px -->
+                    <img src="img/content/news-list-2.jpg" srcset="img/content/news-list-2-2x.jpg 2x" width="546" height="320" alt="Life safety and fire protection requirements for restaurants?">
+                </picture>
+            </div>
+            <h3><a href="news-page.html">Life safety and fire protection requirements for restaurants?</a></h3>
+            <p>04/28/2020</p>
+            @@if (slider === 'sliderbutton' || slider === 'button') {
+                <a href="news-page.html" class="read-more">Read more</a>
+            }
+        </li>
+
+        @@if (slider === 'sliderbutton' || slider === 'slider') {
+            <li class="swiper-slide news-list__item">
+        }
+        @@if (slider === 'none' || slider === 'button') {
+            <li class="news-list__item">
+        }
+            <div class="news-list__image">
+                <picture>
+                    <!-- 1х: 546px; 2x: 1092px -->
+                    <img src="img/content/news-list-3.jpg" srcset="img/content/news-list-3-2x.jpg 2x" width="546" height="320" alt="How often does a fire suppression system need to be hydro tested?">
+                </picture>
+            </div>
+            <h3><a href="news-page.html">Fire extinguisher inspections</a></h3>
+            <p>07/26/2020</p>
+            @@if (slider === 'sliderbutton' || slider === 'button') {
+                <a href="news-page.html" class="read-more">Read more</a>
+            }
+        </li>
+
+        @@if (slider === 'sliderbutton' || slider === 'slider') {
+            <li class="swiper-slide news-list__item">
+        }
+        @@if (slider === 'none' || slider === 'button') {
+            <li class="news-list__item">
+        }
+            <div class="news-list__image">
+                <picture>
+                    <!-- 1х: 546px; 2x: 1092px -->
+                    <img src="img/content/news-list-1.jpg" srcset="img/content/news-list-1-2x.jpg 2x" width="546" height="320" alt="How often does a fire suppression system need to be hydro tested?">
+                </picture>
+            </div>
+            <h3><a href="news-page.html">How often does a fire suppression system need to be hydro tested?</a></h3>
+            <p>11/26/2019</p>
+            @@if (slider === 'sliderbutton' || slider === 'button') {
+                <a href="news-page.html" class="read-more">Read more</a>
+            }
+        </li>
+
+        @@if (slider === 'sliderbutton' || slider === 'slider') {
+            <li class="swiper-slide news-list__item">
+        }
+        @@if (slider === 'none' || slider === 'button') {
+            <li class="news-list__item">
+        }
+            <div class="news-list__image">
+                <picture>
+                    <!-- 1х: 546px; 2x: 1092px -->
+                    <img src="img/content/news-list-2.jpg" srcset="img/content/news-list-2-2x.jpg 2x" width="546" height="320" alt="Life safety and fire protection requirements for restaurants?">
+                </picture>
+            </div>
+            <h3><a href="news-page.html">Life safety and fire protection requirements for restaurants?</a></h3>
+            <p>04/28/2020</p>
+            @@if (slider === 'sliderbutton' || slider === 'button') {
+                <a href="news-page.html" class="read-more">Read more</a>
+            }
+        </li>
+
+        @@if (slider === 'sliderbutton' || slider === 'slider') {
+            <li class="swiper-slide news-list__item">
+        }
+        @@if (slider === 'none' || slider === 'button') {
+            <li class="news-list__item">
+        }
+            <div class="news-list__image">
+                <picture>
+                    <!-- 1х: 546px; 2x: 1092px -->
+                    <img src="img/content/news-list-3.jpg" srcset="img/content/news-list-3-2x.jpg 2x" width="546" height="320" alt="How often does a fire suppression system need to be hydro tested?">
+                </picture>
+            </div>
+            <h3><a href="news-page.html">Fire extinguisher inspections</a></h3>
+            <p>07/26/2020</p>
+            @@if (slider === 'sliderbutton' || slider === 'button') {
+                <a href="news-page.html" class="read-more">Read more</a>
+            }
+        </li>
+
+    </ul>
+@@if (slider === 'sliderbutton' || slider === 'slider') {
+            </div>
+}

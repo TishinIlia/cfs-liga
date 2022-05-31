@@ -1,0 +1,56 @@
+.success-form {
+  width: 100%;
+  min-height: 32px;
+  background-color: $color-rust;
+  height: auto;
+  opacity: 1;
+  transition: all $default-transition-settings;
+
+  p {
+    margin: 0;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-family: $font-family-saira-condensed;
+    color: $color-default-white;
+    font-size: 1.25rem;
+  }
+
+  &--close {
+    transition: all $default-transition-settings;
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+
+    clip: rect(0 0 0 0);
+    opacity: 0;
+  }
+}
+
+.success-form__wrapper {
+  max-width: 1920px;
+  padding-left: 100px;
+  padding-right: 97px;
+  margin: auto;
+
+  @include viewport-tablet--m {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  @include viewport-tablet--m {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  @include viewport-desktop--s {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  @include viewport-tablet--s {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}

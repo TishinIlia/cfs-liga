@@ -1,0 +1,91 @@
+<header class="header header--@@page @@if (context.mod) { header--@@mod } header--no-js">
+
+  <!-- success -->
+  <div class="header__success-form success-form success-form--close">
+    <div class="success-form__wrapper">
+      <p>Success send!</p>
+    </div>
+  </div>
+  <!-- /success -->
+
+  <div class="header__wrapper">
+    <a class="header__logo header__logo--@@page" href="main.html" aria-label="Переход на главную">
+      <picture>
+        <source media="(max-width: 767px)" srcset="img/svg/logo-head-mobile.svg">
+        @@if (context.page !== 'main') {
+          <img src="img/svg/logo-head-mobile.svg" alt="Logotype «CENTRAL FIRE SERVICES INC»" height="76" width="378">
+        }
+        @@if (context.page === 'main') {
+          <img src="img/svg/logo-head.svg" alt="Logotype «CENTRAL FIRE SERVICES INC»" height="76" width="378">
+        }
+      </picture>
+    </a>
+
+
+
+    <div class="header__menu-wrapper">
+      <nav class="header__menu  header__menu--no-js">
+        <button type="button" class="header__menu-btn">Open menu</button>
+        <ul>
+          <li>
+            <a href="main.html" class="header__menu-link @@if (context.page === 'main') {header__menu-link--active}">Home</a>
+          </li>
+
+          <li>
+            <a href="service.html" class="header__menu-link @@if (context.page === 'services') {header__menu-link--active}">Services</a>
+            <ul class="header__side-menu">
+              <li>
+                <a href="service.html" class="header__menu-link">Kitchen Fire Suppression System</a>
+              </li>
+
+              <li>
+                <a href="service.html" class="header__menu-link">Fire Extinguisher</a>
+              </li>
+
+              <li>
+                <a href="service.html" class="header__menu-link">Fire sprinkler system</a>
+              </li>
+            </ul>
+            <button type="button" class="header__side-menu-btn">Open side</button>
+          </li>
+
+          <li>
+            <a href="#gallery" class="header__menu-link @@if (context.page === 'gallery') {header__menu-link--active}">Gallery</a>
+          </li>
+
+          <li>
+            <a href="news.html" class="header__menu-link @@if (context.page === 'news') {header__menu-link--active}">News</a>
+          </li>
+
+          <li>
+            <a href="#contacts" class="header__menu-link @@if (context.page === 'contact') {header__menu-link--active}">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <script>
+      const header = document.querySelector('.header');
+      const headerMenu = document.querySelector('.header__menu');
+      const menuBtn = document.querySelector('.header__menu-btn');
+
+      if (header && header.classList.contains('header--no-js')) {
+        header.classList.remove('header--no-js');
+      }
+
+      if (headerMenu && menuBtn) {
+        if (headerMenu.classList.contains('header__menu--no-js')) {
+          headerMenu.classList.remove('header__menu--no-js');
+          headerMenu.classList.add('header__menu--js');
+          headerMenu.classList.add('header__menu--close');
+        }
+      }
+      </script>
+
+    <a href="tel:4088540320" class="header__contact">
+      <span class="header__contact-phone"></span>
+      <p class="header__contact-number">408-854-0320</p>
+      <p class="header__contact-adress">24/7 emergency call out</p>
+    </a>
+  </div>
+</header>

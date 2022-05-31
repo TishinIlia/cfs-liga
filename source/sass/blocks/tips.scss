@@ -1,0 +1,23 @@
+.tips {
+  padding-top: 74px;
+  padding-bottom: 53px;
+}
+
+.tips__title-nav-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 97px;
+  margin-bottom: 51px;
+
+  @include viewport-mobile {
+    margin-top: 3px;
+    margin-bottom: 11px;
+  }
+}
+
+.tips__title {
+  margin: 0;
+}
